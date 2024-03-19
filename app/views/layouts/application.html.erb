@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZopIMTest</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script>
+    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/bkd0i677'
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/bkd0i677';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+  </head>
+
+  <body>
+    <!-- Qualaroo for netlify.app -->
+    <!-- Paste this code right after the <body> tag on every page of your site. -->
+    <script type="text/javascript">
+      var _kiq = _kiq || [];
+      (function(){
+        setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+        s.async = true; s.src = 'https://cl.qualaroo.com/ki.js/81762/jfv.js'; f.parentNode.insertBefore(s, f);
+        }, 1);
+      })();
+    </script>
+    <%= yield %>
+   <!-- Start of proprofs8900 Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3e942fc4-445a-46bf-ad6e-d961147519ac"> </script>
+    <!-- End of proprofs8900 Zendesk Widget script --> 
+  </body>
+</html>
